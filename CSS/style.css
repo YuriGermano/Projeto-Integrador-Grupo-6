@@ -3,3 +3,10 @@
     font-size: 14px;
     background-color: #FAEAD3;
 }
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 20px 40px;
+    
+}
