@@ -7,24 +7,26 @@
     box-sizing: border-box;
 }
 
+/* HEADER */
 header {
     display: flex;
     position: relative;
     width: 100%;
     padding: 20px 98px;
-    transition: all 0.6s ease;
+    margin-bottom: 30px;
+    /* transition: all 0.6s ease;
     box-shadow: none;
-    z-index: 1000;
+    z-index: 1000; */
 }
 
-header.sticky {
+/* header.sticky {
     position: fixed;
     top: 5px;
     left: 5px;
     right: 5px;
     border-radius: 14px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
-}
+} */
 
 
 /* IMAGES */
@@ -38,11 +40,32 @@ header.sticky {
     margin-right: 50px;
 }
 
+
 /* SECTION 1 */
 #section1 {
     display: flex;
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 50px;
     width: 1774.48px;
     height: 671.25px;
+    align-items: center;
+}
+
+
+/* TÍTULOS */
+#tituloprincipal {
+    font-family: "Oswald";
+    color: #12075A;
+    font-size: 96px;
+    font-weight: 400;
+    /* padding: 284px 870px; */
+    text-align: left;
+}
+
+
+/* TEXTOS */
+#primeirotexto {
+    font-family: "Inter";
+    font-size: 36px;
 }
