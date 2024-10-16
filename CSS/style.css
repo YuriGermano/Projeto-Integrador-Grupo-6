@@ -1,10 +1,13 @@
 * {
     font-family: sans-serif;
     font-size: 20px;
-    background-color: #FAEAD3;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #FAEAD3;
 }
 
 /* HEADER */
@@ -94,13 +97,74 @@ header {
 
 /* SECTION 4 */
 #section3 {
-
+    width: 1920px;
+    height: 50px;
+    margin-top: 50px;
+    align-items: center;
 }
 
 
 /* SECTION 5 */
-#section3 {
+#section5 {
+    display: flex;
+    width: 1920px;
+    height: 50px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.benemale_container {
+    width: 458px;
+    height: 145px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.benemale_pulse {
+    width: 458px;
+    height: 145px;
+    border: 1px solid #219CFE;
+    border-radius: 90px;
+    background-color: #219CFE;
+    animation: pulse 2s infinite;
+    position: absolute;
+}
+
+.benemale_static {
+    width: 458px;
+    height: 145px;
+    border: 1px solid #219CFE;
+    border-radius: 90px;
+    background-color: #219CFE;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+@keyframes pulse {
+    to {
+        transform: scale(1.5);
+        opacity: 0
+    }
+    
+}
+
+#titulobeneficios {
+    font-family: "Oswald";
+    font-size: 96px;
+    font-weight: 400;
+}
+
+#titulomaleficios {
+    font-family: "Oswald";
+    font-size: 96px;
+    font-weight: 400;
 }
 
 
