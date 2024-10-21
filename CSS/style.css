@@ -224,8 +224,8 @@ header {
     max-width: 753px;
     max-height: 502px;
     display:flex;
-    margin: 50px 800px 50px 800px;
-
+    margin-top: 50px;
+    right: 0;
   }
 
   .image9 img {
@@ -257,7 +257,7 @@ header {
   .content10 {
     display: flex;
     justify-content: space-between;
-    position:relative
+    position:relative;
   }
 
   .text10 {
@@ -277,8 +277,8 @@ header {
     max-width: 753px;
     max-height: 502px;
     display:flex;
-    margin: 50px 800px 50px 800px;
-
+    margin: 50px;
+    right: 0;
   }
 
   .image10 img {
@@ -290,6 +290,10 @@ header {
   #section10 > p {
     margin-bottom: 15px;
     line-height: 1.6;
+  }
+
+  .content10 > img {
+    
   }
 
 /* SECTION 11 */
