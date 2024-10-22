@@ -216,7 +216,7 @@ header {
 
   .imgsec9{
     max-width: 753px;
-    max-height: 502px;
+    max-height: 437px;
   }
 
   .image9 {
@@ -224,7 +224,7 @@ header {
     max-width: 753px;
     max-height: 502px;
     display:flex;
-    margin-top: 50px;
+    margin-top: 120px;
     right: 0;
   }
 
@@ -278,7 +278,8 @@ header {
     max-height: 502px;
     display:flex;
     margin: 50px;
-    right: 0;
+    right:0;
+    z-index: 1;
   }
 
   .image10 img {
@@ -292,9 +293,27 @@ header {
     line-height: 1.6;
   }
 
-  .content10 > img {
-    
-  }
+  .card-back{
+      position: absolute;
+      max-width: 516.5px;
+      max-height: 367.99px;
+      display:flex;
+      margin: 38px;
+      right: 261px;
+      z-index: 0;
+    }
+
+    .card-back2{
+      position: absolute;
+      max-width: 516.5px;
+      max-height: 367.99px;
+      display:flex;
+      margin: 200px;
+      left: 960px;
+      z-index: 0;
+    }
+  
+
 
 /* SECTION 11 */
 
@@ -307,24 +326,18 @@ header {
     background-color: #FAEAD3;
 }
 
-.container11 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .section-title11 {
     color: #12075A;
     font-family: 'Oswald', sans-serif;
     font-size: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .video-container11 {
     position: relative;
     width: 100%;
-    max-width: 753px;
-    height: 502px;
+    max-width: 1720px;
+    height: 769px;
     margin: 50px auto;
     border-radius: 10px;
     overflow: hidden; 
@@ -336,17 +349,3 @@ header {
     border: none;
 }
 
-.video-text11 {
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    z-index: 10;
-}
-
-#section11 > p {
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
