@@ -130,7 +130,7 @@ header {
     right: 0;
 }
 
-.image9 img {
+.image3 img {
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -139,11 +139,58 @@ header {
 
 /* SECTION 4 */
 #section4 {
-  width: 1920px;
-  height: 50px;
-  margin-top: 50px;
-  align-items: center;
+    padding: 20px;
 }
+
+.title4 {
+    color: #000080;
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.ComoFunciona4 {
+    min-width: 1920px;
+    min-height: 1080px;
+    padding: 100px;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+
+.content4 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.text4 {
+    flex: 1;
+    padding-right: 20px;
+    max-width: 842px;
+    max-height: 735px;
+}
+
+.imgsec4 {
+    max-width: 753px;
+    max-height: 502px;
+}
+
+.image4 {
+    position: absolute;
+    max-width: 753px;
+    max-height: 502px;
+    display: flex;
+    margin-top: 50px;
+    right: 0;
+}
+
+.image4 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 
 /* SECTION 5 */
 #section5 {
