@@ -81,6 +81,10 @@ header {
   height: 671.25px;
 }
 
+#DeepFake_title{
+  font-family: "Oswald";
+}
+
 #circulo1 {
   display: flex;
   border-radius: 100%;
@@ -202,6 +206,8 @@ header {
 }
 
 .title6{
+  font-family: "Oswald";
+  font-weight: 400;
   font-size: 60px;
   margin-bottom: 40px;
   color: #000080;
@@ -281,6 +287,11 @@ header {
   height: 1500px;
   max-width: 1920px;
   margin: 0;
+}
+
+#tituloartedigital{
+  font-family: "Oswald";
+  font-weight: 400;
 }
 
 .img7{
@@ -366,6 +377,8 @@ header {
 }
 
 .title8{
+  font-family: "Oswald";
+  font-weight: 400;
   font-size: 60px;
   margin-bottom: 40px;
   color: #000080;
@@ -417,6 +430,8 @@ header {
 }
 
 .title9 {
+  font-family: "Oswald";
+  font-weight: 400;
   color: #000080;
   font-size: 60px;
   margin-bottom: 30px;
@@ -494,6 +509,8 @@ header {
 }
 
 .title10 {
+  font-family: "Oswald";
+  font-weight: 400;
   color: #000080;
   font-size: 60px;
   margin-bottom: 20px;
