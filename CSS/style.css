@@ -19,6 +19,16 @@ header {
   margin-bottom: 30px;
 }
 
+header .head_bot {
+  margin: 0px 0px 0px 900px;
+}
+
+.bot {
+  display: inline-block;
+  padding: 30px;
+  margin: 30px 30px;
+  font-family: "Oswald";
+}
 
 /* IMAGES */
 #brand {
