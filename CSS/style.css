@@ -83,16 +83,37 @@ header {
 }
 
 #circulo1 {
+  display: flex;
   border-radius: 100%;
-  background-color: #FDE0B6;
+  background-color: #fde0b6;
   width: 1000px;
   height: 1000px;
   margin: -15%;
-
+  opacity: 80%;
 }
 
+#div_title_DeepFake {
+  width: 407px;
+  height: 116px;
+  border-radius: 50px;
+  background-color: #f39e55;
+  margin-left: 380px;
+  margin-top: 633px;
+}
+
+#DeepFake_title {
+  font-family: "Oswald";
+  color: #12075a;
+  font-size: 90px;
+  font-weight: 400;
+  padding-left: 50px;
+}
+
+
 /* SECTION 3 */
-#section3 {}
+#section3 {
+
+}
 
 
 /* SECTION 4 */
