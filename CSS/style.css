@@ -1,13 +1,13 @@
 * {
   font-family: sans-serif;
-  /* font-size: 20px; */
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   background-color: #FAEAD3;
+  max-width: 1920px;
+  min-width: 1920px;
 }
 
 /* HEADER */
@@ -17,19 +17,7 @@ header {
   width: 100%;
   padding: 20px 98px;
   margin-bottom: 30px;
-  /* transition: all 0.6s ease;
-    box-shadow: none;
-    z-index: 1000; */
 }
-
-/* header.sticky {
-    position: fixed;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    border-radius: 14px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
-} */
 
 
 /* IMAGES */
@@ -81,6 +69,15 @@ header {
   height: 671.25px;
 }
 
+#section2_header {
+  grid-area: titles;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-self: center;
+  text-align: center;
+}
+
 #DeepFake_title{
   font-family: "Oswald";
 }
@@ -115,16 +112,111 @@ header {
 
 /* SECTION 3 */
 #section3 {
+  padding: 20px !important;
+}
 
+.title3 {
+  color: #000080;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.DeepFake3 {
+  min-width: 1920px;
+  min-height: 1080px;
+  padding: 100px;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+}
+
+.content3 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.text3 {
+  flex: 1;
+  padding-right: 20px;
+  max-width: 842px;
+  max-height: 735px;
+}
+
+.imgsec3 {
+  max-width: 753px;
+  max-height: 502px;
+}
+
+.image3 {
+  position: absolute;
+  max-width: 753px;
+  max-height: 502px;
+  display: flex;
+  margin-top: 50px;
+  right: 0;
+}
+
+.image9 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 
 /* SECTION 4 */
-#section3 {
-  width: 1920px;
-  height: 50px;
+#section4 {
+  padding: 20px !important;
+}
+
+.title4 {
+  color: #000080;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.ComoFunciona4 {
+  min-width: 1920px;
+  min-height: 1080px;
+  padding: 100px;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+}
+
+.content4 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.text4 {
+  flex: 1;
+  padding-right: 20px;
+  max-width: 842px;
+  max-height: 735px;
+}
+
+.imgsec4 {
+  max-width: 753px;
+  max-height: 502px;
+}
+
+.image4 {
+  position: absolute;
+  max-width: 753px;
+  max-height: 502px;
+  display: flex;
   margin-top: 50px;
-  align-items: center;
+  right: 0;
+}
+
+.image4 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 
@@ -134,6 +226,7 @@ header {
   width: 1920px;
   height: 50px;
   margin-top: 50px;
+  margin-bottom: 50px;
   align-items: center;
   justify-content: space-around;
 }
@@ -194,7 +287,7 @@ header {
 
 /* SECTION 6 */
 #section6 {
-    
+    padding: 20px !important;
 }
 
 .protecao6 {
@@ -287,6 +380,7 @@ header {
   height: 1500px;
   max-width: 1920px;
   margin: 0;
+  padding: 20px !important;
 }
 
 #tituloartedigital{
@@ -365,7 +459,7 @@ header {
 
 /* SECTION 8 */
 #section8 {
-
+  padding: 20px !important;
 }
 
 .protecao8 {
@@ -419,6 +513,7 @@ header {
 /* SECTION 9 */
 #seciton9 {
   position: absolute;
+  padding: 20px !important;  
 }
 
 .historia9 {
@@ -498,7 +593,9 @@ header {
 }
 
 /* SECTION 10*/
-
+#section10 {
+  padding: 20px !important;
+}
 
 .como-funciona-container10 {
   min-width: 1920px;
