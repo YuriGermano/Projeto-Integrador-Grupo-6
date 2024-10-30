@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100vh;
+  scroll-behavior: smooth !important;
+}
+
 body {
   background-color: #FAEAD3;
   max-width: 1920px;
@@ -23,11 +28,27 @@ header .head_bot {
   margin: 0px 0px 0px 800px;
 }
 
+.header_link {
+  text-decoration: none;
+  color: #12075A;
+}
+
 .bot {
   display: inline-block;
   padding: 30px;
   margin: 30px 30px;
-  font-family: "Oswald";
+  justify-content: center;
+}
+
+.bot a {
+  font-family: cursive;
+  font-size: 25px;
+  color:#12075A;
+}
+
+.bot img {
+  padding-left: 42px;
+  padding-top: 10px;
 }
 
 /* IMAGES */
@@ -60,7 +81,6 @@ header .head_bot {
   color: #12075A;
   font-size: 96px;
   font-weight: 400;
-  /* padding: 284px 870px; */
   text-align: left;
 }
 
@@ -901,7 +921,7 @@ header .head_bot {
   opacity: 0.5;
 }
 
-.section-title11 {
+#section-title11 {
   font-size: 48px;
   color: #12075A;
   text-align: center;
