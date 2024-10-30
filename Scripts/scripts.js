@@ -10,12 +10,13 @@ window.onscroll = function() {
 };
 
 const imagens = [
-  "Pastekolandia/imagens/1º coisa.webp",
-  "Pastekolandia/imagens/2º ze.jpg",
-  "Pastekolandia/imagens/3º aaa.webp",
-  "Pastekolandia/imagens/4º novaImagem1.jpg",
-  "Pastekolandia/imagens/5º novaImagem2.jpg" 
+  "Images/img1carrosseldeepfake.png",
+  "Images/img2carrosseldeepfake.png",
+  "Images/img3carroseldeepfake.png",
+  "Images/img4carroseldeepfake.png",
+  "Images/img5carroseldeepfake.png"
 ];
+
 let indiceAtual = 0;
 
 function mostrarImagem() {

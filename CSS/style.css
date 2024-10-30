@@ -79,13 +79,58 @@ header .head_bot {
   height: 671.25px;
 }
 
-#section2_header {
-  grid-area: titles;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  align-self: center;
+.buttom_section2 {
+  display: flex;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #FFB463;
+  justify-content: center;
+}
+
+#buttom_section2_oquee {
+  min-width: 130px;
+}
+
+#buttom_section2_comofunciona {
+  min-width: 210px;
+}
+
+#buttom_section2_malebene {
+  min-width: 300px;
+}
+
+#buttom_section2_protecao {
+  min-width: 130px;
+}
+
+.buttom_section2 h3 {
+  font-family: Arial;
+  font-size: 24px;
+  color: #000080;
+}
+
+.buttom_flecha {
+  padding-left: 60px;
+  justify-content: center;
+}
+
+.flecha {
+  justify-content: center;
+}
+
+.flecha p {
   text-align: center;
+}
+
+#header_section2 {
+  display: flex;
+  width: auto;
+  height: fit-content;
+  align-items: center;
+  align-self: center;
+  padding-left: 380px;
+  padding-top: 500px;
 }
 
 #DeepFake_title{
@@ -119,6 +164,75 @@ header .head_bot {
   padding-left: 50px;
 }
 
+#carrossel_section2 {
+  display: flex;
+  margin-left: 840px;
+  margin-top: 600px;
+  width: 600px;
+  height: 300px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+} 
+
+.indicador {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.indicador.ativo {
+  background-color: #ffb463;
+}
+
+.indicador:hover {
+  background-color: #ff9e00;
+  transform: scale(1.5);
+}
+
+#carrossel_section2 img {
+  width: 480px;
+  height: 300px;
+  border-radius: 50px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+#prev, #next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: #000080;
+  background-color: transparent;
+  border: none;
+  transform: translateY(-50%);
+  transition: color 0.3s;
+}
+
+#prev:hover, #next:hover {
+  color: #ff9e00;
+}
+
+#prev {
+  left: 20px;
+}
+
+#next {
+  right: 20px;
+}
+
+#indicadores {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  gap: 5px;
+}
 
 /* SECTION 3 */
 #section3 {

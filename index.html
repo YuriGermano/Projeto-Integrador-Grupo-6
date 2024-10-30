@@ -50,27 +50,35 @@
             <div id="circulo1">
                 <div id="div_title_DeepFake"><h1 id="DeepFake_title">DeepFake</h1></div>
 
-                <div class="titulos-e-flechas">
-                    <div id="section2_header">
-                    <button><h3 id="oquee">O que é?</h3></button>
-                    <div class="flecha">↓</div>
-                    </div>
-                    <div>
-                    <button><h3>Como Funciona</h3></button>
-                    <div class="flecha">↓</div>
-                    </div>
-                    <div>
-                    <button><h3>Malefícios e Benefícios</h3></button>
-                    <div class="flecha">↓</div>
+                <div id="header_section2">
+                    <div class="buttom_flecha">
+                        <button class="buttom_section2" id="buttom_section2_oquee"><h3>O que é?</h3></button>
+                        <div class="flecha"><p>↓</p></div>
                     </div>
 
-                    <div>
-                        <button><h3>Proteção</h3></button>
-                        <div class="flecha">↓</div>
+                    <div class="buttom_flecha">
+                        <button class="buttom_section2" id="buttom_section2_comofunciona"><h3>Como Funciona</h3></button>
+                        <div class="flecha"><p>↓</p></div>
+                    </div>
+
+                    <div class="buttom_flecha">
+                        <button class="buttom_section2" id="buttom_section2_malebene"><h3>Malefícios e Benefícios</h3></button>
+                        <div class="flecha"><p>↓</p></div>
+                    </div>
+
+                    <div class="buttom_flecha">
+                        <button class="buttom_section2" id="buttom_section2_protecao"><h3>Proteção</h3></button>
+                        <div class="flecha"><p>↓</p></div>
                     </div>
                 </div>
-
             </div>
+
+            <div id="carrossel_section2">
+                <button id="prev" onclick="mudarImagem(-1)">&#10094;</button>
+                <img id="imagemCarrossel" src="Images/img1carrosseldeepfake.png" alt="Imagem do Carrossel">
+                <button id="next" onclick="mudarImagem(1)">&#10095;</button>
+                <div id="indicadores"></div>
+            </div>
         </section>
 
 
