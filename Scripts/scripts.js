@@ -10,11 +10,11 @@ window.onscroll = function() {
 };
 
 const imagens = [
-  "Pastekolandia/imagens/1º coisa.webp",
-  "Pastekolandia/imagens/2º ze.jpg",
-  "Pastekolandia/imagens/3º aaa.webp",
-  "Pastekolandia/imagens/4º novaImagem1.jpg",
-  "Pastekolandia/imagens/5º novaImagem2.jpg" 
+  "/images/img_carrossel_arte_digital.png",
+  "/images/2º ze.jpg",
+  "/images/3º aaa.webp",
+  "/images/4º novaImagem1.jpg",
+  "/images/ " 
 ];
 let indiceAtual = 0;
 
