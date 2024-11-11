@@ -431,7 +431,7 @@ header .head_bot {
 
 /* SECTION 6 */
 #section6 {
-    padding: 20px !important;
+
 }
 
 .protecao6 {
@@ -460,6 +460,7 @@ header .head_bot {
 .text6 {
   flex: 1;
   padding-right: 20px;
+  padding-left: 100px;
   max-width: 842px;
   max-height: 735px;
 }
@@ -485,11 +486,11 @@ header .head_bot {
 
 .bordetop6 {
   position: absolute;
-  max-width: 516.5px;
-  max-height: 367.99px;
+  max-width: 600px;
+  max-height: 400px;
   display: flex;
   margin: 105px;
-  right: 146px;
+  right: 192.6px;
   z-index: 0;
 }
 
@@ -498,15 +499,16 @@ header .head_bot {
   max-width: 516.5px;
   max-height: 367.99px;
   display: flex;
-  margin-top: 200px;
-  margin-left: 1210px;
+  margin-top: 251px;
+  margin-left: 1263px;
   z-index: 0;
+  transform: rotate(180deg);
 }
 
-.eclipse1 {
+.elipse6 {
   position: relative;
-  z-index: 0;
-  top: 670px;
+  margin: 0px;
+  top: 950px;
 }
 
 
@@ -523,8 +525,7 @@ header .head_bot {
   gap: 30px;
   height: 1500px;
   max-width: 1920px;
-  margin: 0;
-  padding: 20px !important;
+  margin: 0;;
 }
 
 #tituloartedigital{
@@ -541,11 +542,14 @@ header .head_bot {
   grid-area: left;
   position: relative;
   height: 1100px;
+  left: 0px;
 }
 
 .col-left img {
   width: 850px;
   height: 1100px;
+  left: 0px;
+  
 }
 
 .col-left h1 {
@@ -574,8 +578,9 @@ header .head_bot {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  align-self: center;
+  align-self: start;
   text-align: center;
+  margin-top: -100px;
 }
 
 .titulos-e-flechas h3 {
@@ -585,29 +590,30 @@ header .head_bot {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.flecha {
+.arrows{
   font-size: 2rem;
   margin-top: 10px;
 }
 
-.carrossel {
+.carrossel {  
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
-  width: 600px;
+  height: 500px;
+  width: 800px;
   border-radius: 50px;
   position: relative;
   overflow: hidden;
+  align-self: start;
+  margin-top: -600px;
 }
 
 .carrossel img {
-  width: 600px;
+  width: 480px;
   height: 300px;
-  margin: 0px 10px 0px 60px;
-  border-radius: 10px;
+  border-radius: 50px;
   transition: opacity 0.5s ease-in-out;
-  opacity: 0;
+  opacity: 1;
 }
 
 .carrossel img.mostrar {
@@ -660,12 +666,12 @@ header .head_bot {
 
 .indicador:hover {
   background-color: #ff9e00;
-  transform: scale(2);
+  transform: scale(1.5);
 }
 
 /* SECTION 8 */
 #section8 {
-  padding: 20px !important;
+
 }
 
 .protecao8 {
@@ -673,7 +679,7 @@ header .head_bot {
   height: 1080px;
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 100px;
+  margin: 0px 0px 0px 100px;
 }
 
 .title8{
@@ -710,10 +716,8 @@ header .head_bot {
   height: 600px ;
 }
 
-.eclipse1 {
-  position: relative;
-  z-index: 0;
-  top: 670px;
+.meialua8{
+  margin-top: 200px;
 }
 
 /* SECTION 9 */

@@ -10,11 +10,11 @@ window.onscroll = function() {
 };
 
 const imagens = [
-  "Images/img1carrosseldeepfake.png",
-  "Images/img2carrosseldeepfake.png",
-  "Images/img3carroseldeepfake.png",
-  "Images/img4carroseldeepfake.png",
-  "Images/img5carroseldeepfake.png"
+  "Images/img1carrosselartedigital.png",
+  "Images/img2carroselartedigital.jpg",
+  "Images/img3carrosselartedigital.jpg",
+  "Images/img4carrosselartedigital.png",
+  "Images/img5carrosselartedigital.png"
 ];
 
 let indiceAtual = 0;
@@ -22,9 +22,12 @@ let indiceAtual = 0;
 function mostrarImagem() {
   const imagemCarrossel = document.getElementById("imagemCarrossel");
   imagemCarrossel.classList.remove("mostrar");
+
+  console.log("Mostrando imagem:", imagens[indiceAtual]);
+
   setTimeout(() => {
-      imagemCarrossel.src = imagens[indiceAtual];
-      imagemCarrossel.classList.add("mostrar");
+    imagemCarrossel.src = imagens[indiceAtual];
+    imagemCarrossel.classList.add("mostrar");
   }, 100);
 
   atualizarIndicadores();
@@ -40,18 +43,17 @@ function atualizarIndicadores() {
   indicadores.innerHTML = "";
 
   imagens.forEach((_, i) => {
-      const indicador = document.createElement("span");
-      indicador.classList.add("indicador");
-      if (i === indiceAtual) indicador.classList.add("ativo");
-      indicador.onclick = () => {
-          indiceAtual = i;
-          mostrarImagem();
-      };
-      indicadores.appendChild(indicador);
+    const indicador = document.createElement("span");
+    indicador.classList.add("indicador");
+    if (i === indiceAtual) indicador.classList.add("ativo");
+    indicador.onclick = () => {
+      indiceAtual = i;
+      mostrarImagem();
+    };
+    indicadores.appendChild(indicador);
   });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   mostrarImagem();
-  atualizarIndicadores();
 });
