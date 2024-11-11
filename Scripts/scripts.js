@@ -10,25 +10,27 @@ window.onscroll = function() {
 };
 
 const imagens = [
-  "Images/img1carrosselartedigital.png",
-  "Images/img2carroselartedigital.jpg",
-  "Images/img3carrosselartedigital.jpg",
-  "Images/img4carrosselartedigital.png",
-  "Images/img5carrosselartedigital.png"
+  "./Images/img1carrosselartedigital.png",
+  "./Images/img2carroselartedigital.jpg",
+  "./Images/img3carrosselartedigital.jpg",
+  "./Images/img4carrosselartedigital.png",
+  "./Images/img5carrosselartedigital.png"
 ];
 
 let indiceAtual = 0;
 
 function mostrarImagem() {
   const imagemCarrossel = document.getElementById("imagemCarrossel");
-  imagemCarrossel.classList.remove("mostrar");
 
-  console.log("Mostrando imagem:", imagens[indiceAtual]);
+  console.log("Tentando carregar a imagem:", imagens[indiceAtual]);
 
-  setTimeout(() => {
-    imagemCarrossel.src = imagens[indiceAtual];
-    imagemCarrossel.classList.add("mostrar");
-  }, 100);
+  imagemCarrossel.src = imagens[indiceAtual];
+  imagemCarrossel.classList.add("mostrar");
+
+  imagemCarrossel.onerror = () => {
+    console.error("Erro ao carregar a imagem:", imagens[indiceAtual]);
+    imagemCarrossel.alt = "Imagem não encontrada";
+  };
 
   atualizarIndicadores();
 }

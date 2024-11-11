@@ -581,11 +581,12 @@ header .head_bot {
   margin-top: 10px;
 }
 
-.titulos-e-flechas button{
+.titulos-e-flechas a{
   border: none;
   padding: 10px;
   border-radius: 50px;
   background-color: #FFB463;
+  text-decoration: none;
 }
 
 .titulos-e-flechas {
@@ -623,7 +624,7 @@ header .head_bot {
   height: 300px;
   border-radius: 50px;
   transition: opacity 0.5s ease-in-out;
-  opacity: 1;
+  opacity: 0;
 }
 
 .carrossel img.mostrar {
