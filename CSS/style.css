@@ -157,15 +157,15 @@ header .head_bot {
   font-family: "Oswald";
 }
 
-#circulo1 {
-  display: flex;
-  border-radius: 100%;
-  background-color: #fde0b6;
-  width: 1000px;
-  height: 1000px;
-  margin: -15%;
-  opacity: 80%;
-}
+  #circulo1 {
+    display: flex;
+    border-radius: 100%;
+    background-color: #fde0b6;
+    width: 1000px;
+    height: 1000px;
+    margin: -15%;
+    opacity: 80%;
+  }
 
 #div_title_DeepFake {
   width: 407px;
@@ -525,7 +525,7 @@ header .head_bot {
   gap: 30px;
   height: 1500px;
   max-width: 1920px;
-  margin: 0;;
+  margin: 100px 0px 0px 0px;
 }
 
 #tituloartedigital{
@@ -541,29 +541,44 @@ header .head_bot {
 .col-left {
   grid-area: left;
   position: relative;
-  height: 1100px;
   left: 0px;
-}
-
-.col-left img {
-  width: 850px;
-  height: 1100px;
-  left: 0px;
-  
-}
+  display: flex;
+  border-radius: 100%;
+  background-color: #fde0b6;
+  width: 1000px;
+  height: 1000px;
+  margin: -15%;
+  opacity: 80%;
+} 
 
 .col-left h1 {
   position: absolute;
   top: 70%;
   left: 35%;
-  font-family:Arial, Helvetica, sans-serif ;
   transform: translate(-50%, -50%);
-  color: #000080;
-  background-color: FFB463;
-  font-size: 70px;
+  font-family: "Oswald";
+  color: #12075a;
+  font-size: 90px;
   text-align: center;
-  padding: 15px;
-  border-radius: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 80px;
+  background-color: #f39e55;
+  margin: 0px 0px 0px 200px;
+}
+
+.botao_arrow{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao_arrow img{
+  width: 30px;
+  height: 15px;
+  font-size: 2rem;
+  margin-top: 10px;
 }
 
 .titulos-e-flechas button{
@@ -588,11 +603,6 @@ header .head_bot {
   font-size: 1.5rem;
   color: #000080;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.arrows{
-  font-size: 2rem;
-  margin-top: 10px;
 }
 
 .carrossel {  
@@ -652,8 +662,8 @@ header .head_bot {
 }
 
 .indicador {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background-color: #ddd;
   border-radius: 50%;
   cursor: pointer;
