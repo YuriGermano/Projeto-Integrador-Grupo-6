@@ -1,7 +1,6 @@
 const header = document.getElementById('header');
 
 window.onscroll = function() {
-
   if (window.pageYOffset > 0) {
     header.classList.add('sticky');
   } else {
@@ -9,7 +8,18 @@ window.onscroll = function() {
   }
 };
 
-const imagens = [
+
+// Array com as imagens para cada seção
+const imagensSection2 = [
+  "Images/img1carrosseldeepfake.png",
+  "Images/img2carrosseldeepfake.png",
+  "Images/img3carrosseldeepfake.png",
+  "Images/img4carrosseldeepfake.png",
+  "Images/img4carrosseldeepfake.png"
+];
+
+// Separate indices for each section
+const imagensSection7 = [
   "./Images/img1carrosselartedigital.png",
   "./Images/img2carroselartedigital.jpg",
   "./Images/img3carrosselartedigital.jpg",
@@ -17,31 +27,51 @@ const imagens = [
   "./Images/img5carrosselartedigital.png"
 ];
 
-let indiceAtual = 0;
+// Separate indices for each section
+let indiceAtualSection2 = 0;
+let indiceAtualSection7 = 0;
 
-function mostrarImagem() {
-  const imagemCarrossel = document.getElementById("imagemCarrossel");
+function getImageList(section) {
+  return section === 'section2' ? imagensSection2 : imagensSection7;
+}
 
-  console.log("Tentando carregar a imagem:", imagens[indiceAtual]);
+function mostrarImagem(section) {
+  const indiceAtual = section === 'section2' ? indiceAtualSection2 : indiceAtualSection7;
+  const carouselId = section === 'section2' ? '#carrossel_section2' : '#carrossel_section7';
+  const imagemCarrossel = document.querySelector(`${carouselId} #imagemCarrossel`);
+  const imagens = getImageList(section);
+
+  console.log(`Tentando carregar a imagem para ${section}:`, imagens[indiceAtual]);
 
   imagemCarrossel.src = imagens[indiceAtual];
   imagemCarrossel.classList.add("mostrar");
 
   imagemCarrossel.onerror = () => {
-    console.error("Erro ao carregar a imagem:", imagens[indiceAtual]);
+    console.error(`Erro ao carregar a imagem para ${section}:`, imagens[indiceAtual]);
     imagemCarrossel.alt = "Imagem não encontrada";
   };
 
-  atualizarIndicadores();
+  atualizarIndicadores(section);
 }
 
-function mudarImagem(direcao) {
-  indiceAtual = (indiceAtual + direcao + imagens.length) % imagens.length;
-  mostrarImagem();
+function mudarImagem(direcao, section) {
+  const imagens = getImageList(section);
+  
+  if (section === 'section2') {
+    indiceAtualSection2 = (indiceAtualSection2 + direcao + imagens.length) % imagens.length;
+    mostrarImagem('section2');
+  } else {
+    indiceAtualSection7 = (indiceAtualSection7 + direcao + imagens.length) % imagens.length;
+    mostrarImagem('section7');
+  }
 }
 
-function atualizarIndicadores() {
-  const indicadores = document.querySelector(".indicadores");
+function atualizarIndicadores(section) {
+  const carouselId = section === 'section2' ? '#carrossel_section2' : '#carrossel_section7';
+  const indiceAtual = section === 'section2' ? indiceAtualSection2 : indiceAtualSection7;
+  const indicadores = document.querySelector(`${carouselId} .indicadores`);
+  const imagens = getImageList(section);
+  
   indicadores.innerHTML = "";
 
   imagens.forEach((_, i) => {
@@ -49,13 +79,20 @@ function atualizarIndicadores() {
     indicador.classList.add("indicador");
     if (i === indiceAtual) indicador.classList.add("ativo");
     indicador.onclick = () => {
-      indiceAtual = i;
-      mostrarImagem();
+      if (section === 'section2') {
+        indiceAtualSection2 = i;
+        mostrarImagem('section2');
+      } else {
+        indiceAtualSection7 = i;
+        mostrarImagem('section7');
+      }
     };
     indicadores.appendChild(indicador);
   });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  mostrarImagem();
+  // Initialize both carousels
+  mostrarImagem('section2');
+  mostrarImagem('section7');
 });
