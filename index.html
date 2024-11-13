@@ -236,12 +236,13 @@
                 </div>
             </div>
         
-            <div id="carrossel_section7">
-                <button class="prev" onclick="mudarImagem(-1, 'section7')">&#10094;</button>
-                <img id="imagemCarrossel" alt="Imagem do Carrossel Section 7">
-                <button class="next" onclick="mudarImagem(1, 'section7')">&#10095;</button>
-                <div class="indicadores"></div>
-            </div>          
+    <div class="carousel-container">
+        <div class="carousel-arrow left" onclick="previousSlide()">&#10094;</div>
+        <div id="carousel-slides"></div>
+                <div class="carousel-arrow right" onclick="nextSlide()">&#10095;</div>
+        <div class="carousel-indicators" id="carousel-indicators"></div>
+    </div>
+                                   
         </section>
         
         <section id="section8">

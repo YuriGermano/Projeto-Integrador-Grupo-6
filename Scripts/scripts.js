@@ -8,91 +8,76 @@ window.onscroll = function() {
   }
 };
 
-
-// Array com as imagens para cada seção
-const imagensSection2 = [
-  "Images/img1carrosseldeepfake.png",
-  "Images/img2carrosseldeepfake.png",
-  "Images/img3carrosseldeepfake.png",
-  "Images/img4carrosseldeepfake.png",
-  "Images/img4carrosseldeepfake.png"
+const images = [
+  'Images/img1carrosselartedigital.png',
+  'Images/img2carroselartedigital.jpg',
+  'Images/img3carrosselartedigital.jpg',
+  'Images/img4carrosselartedigital.png',
+  'Images/img5carrosselartedigital.png' // Fifth image added here
 ];
 
-// Separate indices for each section
-const imagensSection7 = [
-  "./Images/img1carrosselartedigital.png",
-  "./Images/img2carroselartedigital.jpg",
-  "./Images/img3carrosselartedigital.jpg",
-  "./Images/img4carrosselartedigital.png",
-  "./Images/img5carrosselartedigital.png"
-];
+let currentSlideIndex = 0;
 
-// Separate indices for each section
-let indiceAtualSection2 = 0;
-let indiceAtualSection7 = 0;
+// Initialize Carousel
+function initCarousel() {
+  const slideContainer = document.getElementById('carousel-slides');
+  const indicatorsContainer = document.getElementById('carousel-indicators');
 
-function getImageList(section) {
-  return section === 'section2' ? imagensSection2 : imagensSection7;
-}
+  images.forEach((imageSrc, index) => {
+      // Create slide element
+      const slide = document.createElement('div');
+      slide.classList.add('carousel-slide');
+      if (index === 0) slide.style.display = 'flex';
 
-function mostrarImagem(section) {
-  const indiceAtual = section === 'section2' ? indiceAtualSection2 : indiceAtualSection7;
-  const carouselId = section === 'section2' ? '#carrossel_section2' : '#carrossel_section7';
-  const imagemCarrossel = document.querySelector(`${carouselId} #imagemCarrossel`);
-  const imagens = getImageList(section);
+      const img = document.createElement('img');
+      img.src = imageSrc;
+      slide.appendChild(img);
 
-  console.log(`Tentando carregar a imagem para ${section}:`, imagens[indiceAtual]);
+      slideContainer.appendChild(slide);
 
-  imagemCarrossel.src = imagens[indiceAtual];
-  imagemCarrossel.classList.add("mostrar");
+      // Create indicator
+      const indicator = document.createElement('span');
+      indicator.classList.add('indicator');
+      if (index === 0) indicator.classList.add('active');
+      indicator.setAttribute('onclick', `goToSlide(${index})`);
 
-  imagemCarrossel.onerror = () => {
-    console.error(`Erro ao carregar a imagem para ${section}:`, imagens[indiceAtual]);
-    imagemCarrossel.alt = "Imagem não encontrada";
-  };
-
-  atualizarIndicadores(section);
-}
-
-function mudarImagem(direcao, section) {
-  const imagens = getImageList(section);
-  
-  if (section === 'section2') {
-    indiceAtualSection2 = (indiceAtualSection2 + direcao + imagens.length) % imagens.length;
-    mostrarImagem('section2');
-  } else {
-    indiceAtualSection7 = (indiceAtualSection7 + direcao + imagens.length) % imagens.length;
-    mostrarImagem('section7');
-  }
-}
-
-function atualizarIndicadores(section) {
-  const carouselId = section === 'section2' ? '#carrossel_section2' : '#carrossel_section7';
-  const indiceAtual = section === 'section2' ? indiceAtualSection2 : indiceAtualSection7;
-  const indicadores = document.querySelector(`${carouselId} .indicadores`);
-  const imagens = getImageList(section);
-  
-  indicadores.innerHTML = "";
-
-  imagens.forEach((_, i) => {
-    const indicador = document.createElement("span");
-    indicador.classList.add("indicador");
-    if (i === indiceAtual) indicador.classList.add("ativo");
-    indicador.onclick = () => {
-      if (section === 'section2') {
-        indiceAtualSection2 = i;
-        mostrarImagem('section2');
-      } else {
-        indiceAtualSection7 = i;
-        mostrarImagem('section7');
-      }
-    };
-    indicadores.appendChild(indicador);
+      indicatorsContainer.appendChild(indicator);
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Initialize both carousels
-  mostrarImagem('section2');
-  mostrarImagem('section7');
-});
+// Show Slide
+function showSlide(index) {
+  const slides = document.getElementsByClassName('carousel-slide');
+  const indicators = document.getElementsByClassName('indicator');
+
+  // Hide all slides and deactivate all indicators
+  for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+      indicators[i].classList.remove('active');
+  }
+
+  // Show the current slide and activate the corresponding indicator
+  slides[index].style.display = 'flex';
+  indicators[index].classList.add('active');
+}
+
+// Navigate to the next slide
+function nextSlide() {
+  currentSlideIndex = (currentSlideIndex + 1) % images.length;
+  showSlide(currentSlideIndex);
+}
+
+// Navigate to the previous slide
+function previousSlide() {
+  currentSlideIndex = (currentSlideIndex - 1 + images.length) % images.length;
+  showSlide(currentSlideIndex);
+}
+
+// Go to a specific slide
+function goToSlide(index) {
+  currentSlideIndex = index;
+  showSlide(currentSlideIndex);
+}
+
+// Initialize carousel on page load
+initCarousel();
