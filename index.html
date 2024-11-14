@@ -12,6 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="Scripts\carrossel_section2.js" defer></script>
+    <script src="Scripts\carrossel_section7.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,55 +65,36 @@
 
     <section id="section2">
         <div id="circulo1">
-            <div id="div_title_DeepFake">
-                <h1 id="DeepFake_title">DeepFake</h1>
+            <div id="div_title_DeepFake"><h1 id="DeepFake_title">DeepFake</h1></div>
+        </div>
+
+        <div id="header_section2">
+            <div class="botao_arrow">
+                <button class="buttom_section2" id="buttom_section2_oquee"><h3>O que é?</h3></button>
+                <img src="Images/Arrow.png" alt="Arrow">
             </div>
 
-            <div id="header_section2">
-                <div class="buttom_flecha">
-                    <button class="buttom_section2" id="buttom_section2_oquee">
-                        <h3>O que é?</h3>
-                    </button>
-                    <div class="flecha">
-                        <p>↓</p>
-                    </div>
-                </div>
+            <div class="botao_arrow">
+                <button class="buttom_section2" id="buttom_section2_comofunciona"><h3>Como Funciona</h3></button>
+                <img src="Images/Arrow.png" alt="Arrow">
+            </div>
 
-                <div class="buttom_flecha">
-                    <button class="buttom_section2" id="buttom_section2_comofunciona">
-                        <h3>Como Funciona</h3>
-                    </button>
-                    <div class="flecha">
-                        <p>↓</p>
-                    </div>
-                </div>
+            <div class="botao_arrow">
+                <button class="buttom_section2" id="buttom_section2_malebene"><h3>Malefícios e Benefícios</h3></button>
+                <img src="Images/Arrow.png" alt="Arrow">
+            </div>
 
-                <div class="buttom_flecha">
-                    <button class="buttom_section2" id="buttom_section2_malebene">
-                        <h3>Malefícios e Benefícios</h3>
-                    </button>
-                    <div class="flecha">
-                        <p>↓</p>
-                    </div>
-                </div>
-
-                <div class="buttom_flecha">
-                    <button class="buttom_section2" id="buttom_section2_protecao">
-                        <h3>Proteção</h3>
-                    </button>
-                    <div class="flecha">
-                        <p>↓</p>
-                    </div>
-                </div>
+            <div class="botao_arrow">
+                <button class="buttom_section2" id="buttom_section2_protecao"><h3>Proteção</h3></button>
+                <img src="Images/Arrow.png" alt="Arrow">
             </div>
         </div>
 
         <div id="carrossel_section2">
-            <button id="prev" onclick="mudarImagem(-1)">&#10094;</button>
-            <img id="imagemCarrossel" alt="Imagem do Carrossel">
-            <button id="next" onclick="mudarImagem(1)">&#10095;</button>
-            <div id="indicadores"></div>
-                      
+            <button id="prev_section2" onclick="mudarImagem(-1)">&#10094;</button>
+            <img id="imagemCarrossel_section2" alt="Imagem do Carrossel">
+            <button id="next_section2" onclick="mudarImagem(1)">&#10095;</button>
+            <div id="indicadores_section2"></div>
         </div>
     </section>
 
@@ -419,8 +402,6 @@
         <h2>© 2024 Instituto Federal Catarinense Concórdia. Todos os direitos reservados.</h2>
 
     </footer>
-
-    <script src="Scripts/scripts.js"></script>
 
 </body>
 
