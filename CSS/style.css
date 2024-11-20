@@ -201,12 +201,11 @@ header .head_bot {
   border-radius: 50px;
 }
 
-
 #imagemCarrossel_section {
-
 }
 
-#prev_section2, #next_section2 {
+#prev_section2,
+#next_section2 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -217,7 +216,8 @@ header .head_bot {
   color: darkblue;
 }
 
-#prev_section2:hover, #next_section2:hover {
+#prev_section2:hover,
+#next_section2:hover {
   color: #f39e55;
 }
 
@@ -932,4 +932,93 @@ header .head_bot {
   text-align: center;
   margin-bottom: 0px; /* Remove a margem inferior para alinhar ao vídeo */
   padding-bottom: 30px; /* Adiciona um pequeno espaçamento inferior */
+}
+
+/* FOOTER */
+footer {
+  background-color: #dd3624;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-wave {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #f5e9d6;
+  border-radius: 0 0 50% 50%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.footer-logo,
+.footer-contact,
+.footer-developers {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-logo img.logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.footer-contact h3,
+.footer-developers h3 {
+  font-size: 50px;
+  margin-bottom: 1px;
+}
+
+.footer-contact .icons img,
+.footer-contact .icons p {
+  display: inline-block;
+  margin: 0px;
+  width: 150px;
+  height: auto;
+}
+.footer-contact .icons .fone {
+  width: 10px;
+  height: 30px;
+}
+
+.footer-developers p {
+  margin: 5px 0;
+  margin-right: 60px;
+  font-size: 20px;
+}
+
+.footer-copy {
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 0.9em;
+  background-color: #dd3624;
+}
+.footer-developers {
+  text-align: center;
+}
+
+.nomesrodape {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Espaçamento entre as colunas */
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-developers h3 {
+  font-size: 35px;
 }
