@@ -633,6 +633,10 @@ header .head_bot {
   overflow: hidden;
 }
 
+#imagemCarrossel_section7.fade {
+  opacity: 0;  
+}
+
 #carrossel_section7 img {
   width: 100%;
   height: 100%;
@@ -640,6 +644,7 @@ header .head_bot {
   grid-column: 2/3;
   grid-row: 1/2;
   border-radius: 50px;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .buttom_section7 a{
@@ -659,6 +664,14 @@ header .head_bot {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#imagemCarrossel_section7.fade {
+  opacity: 0; 
+}
+
+#indicadores_section7 .indicator.active-indicator {
+  background-color: #f39e55; 
 }
 
 #prev_section7:hover,
@@ -737,6 +750,7 @@ header .head_bot {
 
 .meialua8 {
   margin-top: 200px;
+  margin-right: 110px;
 }
 
 /* SECTION 9 */
