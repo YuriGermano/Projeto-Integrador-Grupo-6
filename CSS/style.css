@@ -9,6 +9,7 @@ html {
   max-width: 1920px;
   min-width: 1920px;
   scroll-behavior: smooth !important;
+  overflow-x: hidden;
 }
 
 body {
@@ -72,6 +73,7 @@ header .head_bot {
   width: 1774.48px;
   height: 671.25px;
   align-items: center;
+  z-index: 1;
 }
 
 /* TÍTULOS */
@@ -96,6 +98,7 @@ header .head_bot {
   grid-template-rows: 50% 50%;
   width: 1774.48px;
   height: 671.25px;
+  margin-bottom: 200px;
 }
 
 .buttom_section2 {
@@ -279,6 +282,7 @@ header .head_bot {
 #section3 {
   padding: 20px !important;
   margin-top: 50px;
+  margin-bottom: -250px;
 }
 
 .title3 {
@@ -704,6 +708,7 @@ header .head_bot {
 
 /* SECTION 8 */
 #section8 {
+  
 }
 
 .protecao8 {
