@@ -20,8 +20,7 @@ function initCarousel_section7() {
         indicator.addEventListener("click", () => goToSlide_section7(index));
         indicadores_section7.appendChild(indicator);
     });
-
-    // Add event listeners to prev and next buttons
+    
     prevButton_section7.addEventListener("click", () => mudarImagem_section7(-1));
     nextButton_section7.addEventListener("click", () => mudarImagem_section7(1));
 

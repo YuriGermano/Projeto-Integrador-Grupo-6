@@ -8,13 +8,13 @@ html {
   height: 100vh;
   max-width: 1920px;
   min-width: 1920px;
+  scroll-behavior: smooth !important;
 }
 
 body {
   background-color: #faead3;
   max-width: 1920px;
   min-width: 1920px;
-  scroll-behavior: smooth !important;
 }
 
 /* HEADER */
@@ -539,7 +539,7 @@ header .head_bot {
   grid-template-rows: 50% 50%;
   width: 1774.48px;
   height: 671.25px;
-  margin-bottom: 140px;
+  margin-bottom: 300px;
 }
 
 #circulo7 {
@@ -595,6 +595,11 @@ header .head_bot {
   margin-right: 10px;
 }
 
+.buttom_section7:hover{
+  transform: scale(1.2);
+  transition: 1s;
+}
+
 .botao_arrow_section7 {
   justify-content: center;
   text-align: center;
@@ -637,6 +642,10 @@ header .head_bot {
   border-radius: 50px;
 }
 
+.buttom_section7 a{
+  text-decoration: none;
+}
+
 #prev_section7,
 #next_section7 {
   position: absolute;
@@ -644,24 +653,29 @@ header .head_bot {
   transform: translateY(-50%);
   background-color: transparent;
   border: none;
-  font-size: 24px;
+  font-size: 40px;
   cursor: pointer;
   color: darkblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #prev_section7:hover,
 #next_section7:hover {
   color: #f39e55;
+  font-size: 45px;
+  transition: 0.3s;
 }
 
 #prev_section7 {
-  left: 10px;
+  left: -5px;
   grid-column: 1/2;
   grid-row: 1/3;
 }
 
 #next_section7 {
-  right: 10px;
+  right: -5px;
   grid-column: 3/4;
   grid-row: 1/3;
 }
