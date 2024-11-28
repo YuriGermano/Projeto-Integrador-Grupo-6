@@ -27,8 +27,10 @@ header {
   margin-bottom: 30px;
 }
 
-header .head_bot {
-  margin: 0px 0px 0px 800px;
+.head_bot {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 0px 700px;
 }
 
 .header_link {
@@ -40,7 +42,10 @@ header .head_bot {
   display: inline-block;
   padding: 30px;
   margin: 30px 30px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .bot a {
@@ -50,8 +55,14 @@ header .head_bot {
 }
 
 .bot img {
-  padding-left: 42px;
-  padding-top: 10px;
+  width: 30px;
+  margin-top: 5px;
+}
+
+.bot h2 {
+  font-family: "Inter";
+  color: #12075a;
+  font-size: 32px;
 }
 
 /* IMAGES */
@@ -168,7 +179,8 @@ header .head_bot {
   width: 1000px;
   height: 1000px;
   margin: -40%;
-  opacity: 80%;
+  z-index: -1;
+  box-shadow: 50px 50px 80px rgb(139, 139, 139);
 }
 
 #div_title_DeepFake {
@@ -221,7 +233,7 @@ header .head_bot {
   transform: translateY(-50%);
   background-color: transparent;
   border: none;
-  font-size: 24px;
+  font-size: 36px;
   cursor: pointer;
   color: darkblue;
 }
@@ -232,13 +244,13 @@ header .head_bot {
 }
 
 #prev_section2 {
-  left: 10px;
+  margin-right: 15px;
   grid-column: 1/2;
   grid-row: 1/3;
 }
 
 #next_section2 {
-  right: 10px;
+  margin-left: 9px;
   grid-column: 3/4;
   grid-row: 1/3;
 }
@@ -555,7 +567,8 @@ header .head_bot {
   width: 1000px;
   height: 1000px;
   margin: -40%;
-  opacity: 80%;
+  z-index: -1;
+  box-shadow: 50px 50px 80px rgb(139, 139, 139);
 }
 
 #div_title_ArteDigital {
