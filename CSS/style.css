@@ -8,7 +8,7 @@ html {
   height: 100vh;
   max-width: 1920px;
   min-width: 1920px;
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -258,7 +258,6 @@ header {
 #indicadores_section2 {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
   grid-column: 2/3;
   grid-row: 2/3;
 }
@@ -307,10 +306,12 @@ header {
 
 .DeepFake3 {
   min-width: 1920px;
-  min-height: 1080px;
+  min-height: auto;
   padding: 100px;
   font-family: Arial, sans-serif;
-  font-size: 30px;
+  font-size: 30px;  
+  margin-top: 100px;
+  margin-bottom: 400px;
 }
 
 .content3 {
@@ -361,7 +362,7 @@ header {
 
 .ComoFunciona4 {
   min-width: 1920px;
-  min-height: 1080px;
+  min-height: 750px;
   padding: 100px;
   font-family: Arial, sans-serif;
   font-size: 30px;
@@ -466,11 +467,12 @@ header {
 /* SECTION 6 */
 #section6 {
   display: flex;
-
   width: 100%;
   height: 100%;
   align-items: center;
   z-index: 1;
+  margin-top: 275px;
+  margin-bottom: 400px;
 
 }
 
@@ -512,15 +514,15 @@ header {
 
 .image6 {
   position: absolute;
-  max-width: 753px;
-  max-height: 435px;
+  width: 753px;
+  height: 437px;
   display: flex;
   margin-top: 120px;
-  right: 0;
+  margin-left: 964px;
 }
 
 .image6 img {
-  width: 100%;
+  width: 905px;
   height: auto;
 }
 
@@ -548,7 +550,7 @@ header {
 .elipse6 {
   position: relative;
   margin: 0px;
-  top: 950px;
+  top: 400px;
 }
 
 #bolas_css {
@@ -720,7 +722,6 @@ header {
 #indicadores_section7 {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
   grid-column: 2/3;
   grid-row: 2/3;
 }
@@ -728,7 +729,11 @@ header {
 
 /* SECTION 8 */
 #section8 {
-  
+  height: auto;
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .protecao8 {
@@ -786,12 +791,13 @@ header {
   padding: 20px !important;
 } */
 
-#section9, #section8 {
-  height: 100vh;
+#section9 {
+  height: auto;
   width: 100%;
   padding: 100px;
   display: flex;
   flex-direction: column;
+  margin-top: -400px;
 } 
 
 .historia9 {
