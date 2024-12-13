@@ -422,13 +422,33 @@ header {
   position: relative;
 }
 
-.benemale_pulse {
+.benemale_pulse1 {
   width: 458px;
   height: 145px;
   border: 1px solid #219cfe;
   border-radius: 90px;
   background-color: #219cfe;
-  animation: pulse 2s infinite;
+  animation: pulse1 2s infinite;
+  position: absolute;
+}
+
+.benemale_pulse2 {
+  width: 458px;
+  height: 145px;
+  border: 1px solid #219cfe;
+  border-radius: 90px;
+  background-color: #219cfe;
+  animation: pulse2 2s infinite;
+  position: absolute;
+}
+
+.benemale_pulse3 {
+  width: 458px;
+  height: 145px;
+  border: 1px solid #219cfe;
+  border-radius: 90px;
+  background-color: #219cfe;
+  animation: pulse3 2s infinite;
   position: absolute;
 }
 
@@ -445,7 +465,21 @@ header {
   position: absolute;
 }
 
-@keyframes pulse {
+@keyframes pulse1 {
+  to {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse2 {
+  to {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse3 {
   to {
     transform: scale(1.5);
     opacity: 0;
