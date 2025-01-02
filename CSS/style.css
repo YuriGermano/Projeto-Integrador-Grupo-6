@@ -76,7 +76,7 @@ header {
 }
 
 /* SECTION 1 */
-#section1 {
+#section1_inicio {
   display: flex;
   margin-left: 100px;
   margin-right: 100px;
@@ -103,7 +103,7 @@ header {
 }
 
 /* SECTION 2 */
-#section2 {
+#section2_deepfake {
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: 50% 50%;
@@ -290,7 +290,7 @@ header {
 }
 
 /* SECTION 3 */
-#section3 {
+#section3_deepfake_oquee {
   padding: 20px !important;
   margin-top: 50px;
   margin-bottom: -250px;
@@ -348,7 +348,7 @@ header {
 }
 
 /* SECTION 4 */
-#section4 {
+#section4_deepfake_comofunciona {
   padding: 20px !important;
 }
 
@@ -402,7 +402,7 @@ header {
 }
 
 /* SECTION 5 */
-#section5 {
+#section5_deepfake_benemale {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
@@ -543,7 +543,7 @@ header {
 }
 
 /* SECTION 6 */
-#section6 {
+#section6_deeepfake_protecao {
   display: flex;
   width: 100%;
   height: 100%;
@@ -636,7 +636,7 @@ header {
 }
 
 /* SECTION 7 */
-#section7 {
+#section7_artedigital {
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: 50% 50%;
@@ -806,7 +806,7 @@ header {
 
 
 /* SECTION 8 */
-#section8 {
+#section8_artedigital_oquee {
   height: auto;
   width: 100%;
   padding: 100px;
@@ -864,12 +864,12 @@ header {
 }
 
 /* SECTION 9
-#section9 {
+#section9_artedigital_historia {
   position: absolute;
   padding: 20px !important;
 } */
 
-#section9 {
+#section9_artedigital_historia {
   height: auto;
   width: 100%;
   padding: 100px;
@@ -956,7 +956,7 @@ header {
 }
 
 /* SECTION 10*/
-#section10 {
+#section10_artedigital_comofunciona {
   padding: 20px !important;
 }
 
@@ -1039,55 +1039,7 @@ header {
 }
 
 /* SECTION 11 */
-#section11 {
-  position: relative;
-  z-index: 1;
-  min-width: 100%;
-  min-height: 1080px;
-  padding: 100px 50px;
-  font-family: Arial, sans-serif;
-  font-size: 30px;
-  background-color: #faead3;
-}
-
-.video-container11 {
-  position: relative;
-  width: 100%;
-  max-width: 1720px; /* Define a largura do vídeo */
-  height: 769px; /* Define a altura do vídeo */
-  margin: 0 auto; /* Remove margem superior para ajustar ao título */
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao contêiner do vídeo */
-}
-
-.video-container11 iframe {
-  width: 100%;
-  height: 100%; /* Garante que o vídeo ocupe todo o espaço do contêiner */
-  border: none;
-}
-
-.sete {
-  position: absolute;
-  top: 200px;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: 0;
-  opacity: 0.5;
-}
-
-#section-title11 {
-  font-size: 48px;
-  color: #12075a;
-  text-align: center;
-  margin-bottom: 0px; /* Remove a margem inferior para alinhar ao vídeo */
-  padding-bottom: 30px; /* Adiciona um pequeno espaçamento inferior */
-}
-
-/* SECTION 12 */
-
-#section_titulo12{
+#section11_obrasdigitais_titulo{
   font-family: "Oswald";
   text-align: center;
   font-size: 60px;
@@ -1113,7 +1065,7 @@ header {
   animation: autoRun 50s linear infinite;
 }
 
-@Keyframes autoRun{
+@keyframes autoRun{
   from{
       transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
   }to{
@@ -1137,6 +1089,55 @@ header {
 
 
 }
+
+
+/* SECTION 12 */
+#section12_sobrenos {
+  position: relative;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 1080px;
+  padding: 100px 50px;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  background-color: #faead3;
+}
+
+.video-container12 {
+  position: relative;
+  width: 100%;
+  max-width: 1720px; /* Define a largura do vídeo */
+  height: 769px; /* Define a altura do vídeo */
+  margin: 0 auto; /* Remove margem superior para ajustar ao título */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao contêiner do vídeo */
+}
+
+.video-container12 iframe {
+  width: 100%;
+  height: 100%; /* Garante que o vídeo ocupe todo o espaço do contêiner */
+  border: none;
+}
+
+.sete {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+#section12_sobrenos_title {
+  font-size: 48px;
+  color: #12075a;
+  text-align: center;
+  margin-bottom: 0px; /* Remove a margem inferior para alinhar ao vídeo */
+  padding-bottom: 30px; /* Adiciona um pequeno espaçamento inferior */
+}
+
 
 /* FOOTER */
 footer {
