@@ -21,7 +21,6 @@ function initCarousel_section2() {
         indicadores_section2.appendChild(indicator);
     });
 
-
     prevButton_section2.addEventListener("click", () => mudarImagem_section2(-1));
     nextButton_section2.addEventListener("click", () => mudarImagem_section2(1));
 
