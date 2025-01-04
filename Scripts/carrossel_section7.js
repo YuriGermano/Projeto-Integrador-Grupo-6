@@ -1,10 +1,10 @@
 let currentSlide_section7 = 0;
 const images_section7 = [
-  "Images/img1carrosselartedigital.png",
-  "Images/img2carrosselartedigital.jpg",
-  "Images/img3carrosselartedigital.jpg",
-  "Images/img4carrosselartedigital.png",
-  "Images/img5carrosselartedigital.png"
+  "Images/imgcarrosselartedigital1.png",
+  "Images/imgcarrosselartedigital2.png",
+  "Images/imgcarrosselartedigital3.png",
+  "Images/imgcarrosselartedigital4.png",
+  "Images/imgcarrosselartedigital5.png"
 ];
 
 const imagemCarrossel_section7 = document.getElementById("imagemCarrossel_section7");
