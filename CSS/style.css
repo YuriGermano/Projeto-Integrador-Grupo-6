@@ -621,6 +621,13 @@ header {
   transform: rotate(180deg);
 }
 
+.elipse6_virada{
+  transform: scaleX(-1); /* Inverte a imagem na horizontal se caso precisar explicar */
+  margin-right: 2.90%;
+  
+}
+
+
 .elipse6 {
   position: relative;
   margin: 0px;
