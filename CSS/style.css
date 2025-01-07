@@ -87,6 +87,10 @@ header {
   z-index: 1;
 }
 
+.elipse6_virada{
+  width: 1920px;
+}
+
 /* TÍTULOS */
 #tituloprincipal {
   font-family: "Oswald";
@@ -321,6 +325,7 @@ header {
   padding-right: 20px;
   max-width: 842px;
   max-height: 735px;
+  text-align: justify;
 }
 
 .imgsec3 {
@@ -375,6 +380,7 @@ header {
   padding-right: 20px;
   max-width: 842px;
   max-height: 735px;
+  text-align: justify;
 }
 
 .imgsec4 {
@@ -586,6 +592,7 @@ header {
   padding-left: 100px;
   max-width: 842px;
   max-height: 735px;
+  text-align: justify;
 }
 
 .imgsec6 {
@@ -853,6 +860,7 @@ header {
   padding-right: 20px;
   max-width: 842px;
   max-height: 735px;
+  text-align: justify;
 }
 
 .image8 {
@@ -869,8 +877,7 @@ header {
 
 .meialua8 {
   margin-top: 200px;
-  margin-right: 110px;
-  margin-right: -2.5%;
+  margin-right: -80px;
 }
 
 /* SECTION 9
@@ -915,6 +922,7 @@ header {
   padding-right: 20px;
   max-width: 842px;
   max-height: 735px;
+  text-align: justify;
 }
 
 .imgsec9 {
@@ -997,6 +1005,7 @@ header {
   padding-right: 20px;
   max-width: 842px;
   max-height: 735px;
+  text-align: justify;
 }
 
 .imgsec10 {
@@ -1281,20 +1290,16 @@ footer {
   margin-right: 135px;
 }
 
+.icons{
+  display: flex;
+}
+
 .footer-contact .icons img,
 .footer-contact .icons p {
   display: inline-block;
   margin: 0px;
   width: 150px;
   height: auto;
-}
-.footer-contact .icons .fone {
-  width: 10px;
-  height: 30px;
-}
-
-.footer-contact .icons .fone img {
-  margin-top: 52px;
 }
 
 .footer-developers p {
@@ -1330,4 +1335,15 @@ footer {
 .footer-developers h3 {
   font-size: 35px;
   margin-right: 50px;
+}
+
+#insta img{
+  width: 70px;
+  height: 70px;
+}
+
+#insta{
+  width: fit-content;
+  margin-top: 38px;
+  margin-right: 40px;
 }
