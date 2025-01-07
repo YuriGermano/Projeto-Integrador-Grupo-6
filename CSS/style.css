@@ -1102,6 +1102,11 @@ header {
   padding: 4px;
 }
 
+.item {
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+
 /* SECTION 12 */
 #section12_sobrenos {
   position: relative;
