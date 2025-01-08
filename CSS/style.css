@@ -975,7 +975,7 @@ header {
 
 /* SECTION 10*/
 #section10_artedigital_comofunciona {
-  padding: 20px !important;
+  padding: 20px;
 }
 
 .como-funciona-container10 {
@@ -984,6 +984,7 @@ header {
   padding: 100px;
   font-family: Arial, sans-serif;
   font-size: 30px;
+  margin-top: -325px
 }
 
 .title10 {
