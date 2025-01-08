@@ -65,6 +65,11 @@ header {
   font-size: 32px;
 }
 
+.bot h2:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
 /* IMAGES */
 #brand {
   width: 133px;
@@ -170,6 +175,22 @@ header {
   margin-top: 300px;
 }
 
+.buttom_section2{
+  display: flex;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #ffb463;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.buttom_section2:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
 #DeepFake_title {
   font-family: "Oswald";
 }
@@ -214,7 +235,7 @@ header {
   grid-row: 2/3;
   justify-self: center;
   margin-top: 88px;
-  margin-left: 120px;
+  margin-left: 200px;
   border-radius: 50px;
   align-items: center;
   position: relative;
@@ -311,7 +332,7 @@ header {
   font-family: Arial, sans-serif;
   font-size: 30px;  
   margin-top: 100px;
-  margin-bottom: 400px;
+  margin-bottom: 230px;
 }
 
 .content3 {
@@ -718,7 +739,7 @@ header {
 }
 
 .buttom_section7:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 1s;
 }
 
