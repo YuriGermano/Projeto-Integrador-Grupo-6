@@ -21,10 +21,14 @@ body {
 /* HEADER */
 header {
   display: flex;
-  position: relative;
+  position: fixed;
+  top: 0;
   width: 100%;
-  padding: 20px 98px;
-  margin-bottom: 30px;
+  background-color: #faead3;
+  display: flex;
+  justify-content: center;
+  z-index: 1000; /* Garante que o header esteja acima dos outros elementos */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
 }
 
 .head_bot {
@@ -72,6 +76,7 @@ header {
 
 /* IMAGES */
 #brand {
+  margin-top: 23px;
   width: 133px;
   height: 133px;
 }
@@ -83,6 +88,7 @@ header {
 /* SECTION 1 */
 #section1_inicio {
   display: flex;
+  margin-top: 200px;
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom: 50px;
