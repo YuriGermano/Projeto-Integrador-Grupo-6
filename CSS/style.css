@@ -559,7 +559,7 @@ header {
   align-items: center;
   z-index: 1;
   margin-top: 275px;
-  margin-bottom: 400px;
+  margin-bottom: 200px;
 
 }
 
@@ -943,7 +943,6 @@ header {
 .image9 img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
   z-index: 1;
 }
 
@@ -1028,7 +1027,6 @@ header {
 .image10 img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
 }
 
 .card-back {
