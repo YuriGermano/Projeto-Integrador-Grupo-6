@@ -169,7 +169,7 @@ header {
   display: flex;
   width: fit-content;
   height: fit-content;
-  align-items: center;
+  align-items: center; 
   align-self: center;
   justify-self: right;
   margin-top: 300px;
