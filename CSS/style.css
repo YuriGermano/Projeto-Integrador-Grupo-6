@@ -574,10 +574,11 @@ header {
 .title6 {
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 60px;
+  font-size: 55px;
   margin-bottom: 40px;
   color: #000080;
   max-width: 600px;
+  margin-left: 95px;
 }
 
 .content6 {
@@ -630,7 +631,7 @@ header {
   max-height: 367.99px;
   display: flex;
   margin-top: 251px;
-  margin-left: 1263px;
+  margin-left: 1260px;
   z-index: 0;
   transform: rotate(180deg);
 }
