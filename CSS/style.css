@@ -24,11 +24,12 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 150px;
   background-color: #faead3;
   display: flex;
   justify-content: center;
-  z-index: 1000; /* Garante que o header esteja acima dos outros elementos */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .head_bot {
@@ -45,7 +46,7 @@ header {
 .bot {
   display: inline-block;
   padding: 30px;
-  margin: 30px 30px;
+  margin: 20px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,7 +77,7 @@ header {
 
 /* IMAGES */
 #brand {
-  margin-top: 23px;
+  margin-top: 7px;
   width: 133px;
   height: 133px;
 }
@@ -377,7 +378,7 @@ header {
 
 /* SECTION 4 */
 #section4_deepfake_comofunciona {
-  padding: 20px !important;
+  padding: 20px;
 }
 
 .title4 {
@@ -416,11 +417,10 @@ header {
 }
 
 .image4 {
-  position: absolute;
   max-width: 753px;
   max-height: 502px;
   display: flex;
-  margin-top: 50px;
+  margin-top: -45px;
   right: 0;
 }
 
@@ -438,7 +438,6 @@ header {
   gap: 40px;
   width: 1920px;
   height: fit-content;
-  margin-top: 50px;
   margin-bottom: 50px;
   justify-self: center;
   align-items: center;
@@ -585,7 +584,7 @@ header {
   height: 100%;
   align-items: center;
   z-index: 1;
-  margin-top: 275px;
+  margin-top: 100px;
   margin-bottom: 200px;
 
 }
@@ -601,11 +600,11 @@ header {
 .title6 {
   font-family: "Oswald";
   font-weight: 400;
-  font-size: 55px;
-  margin-bottom: 40px;
+  font-size: 54px;
+  margin-bottom: -40px;
   color: #000080;
   max-width: 600px;
-  margin-left: 95px;
+  margin-left: 5px;
 }
 
 .content6 {
@@ -617,9 +616,10 @@ header {
 .text6 {
   flex: 1;
   padding-right: 20px;
-  padding-left: 100px;
+  padding-left: 6px;
   max-width: 842px;
   max-height: 735px;
+  margin-top: 60px;
   text-align: justify;
 }
 
@@ -638,7 +638,7 @@ header {
 }
 
 .image6 img {
-  width: 905px;
+  width: 675px;
   height: auto;
 }
 
@@ -648,17 +648,17 @@ header {
   max-height: 400px;
   display: flex;
   margin: 105px;
-  right: 192.6px;
+  right: 192px;
   z-index: 0;
 }
 
 .bordebottom6 {
   position: absolute;
-  max-width: 516.5px;
-  max-height: 367.99px;
+  max-width: 517px;
+  max-height: 369px;
   display: flex;
   margin-top: 251px;
-  margin-left: 1260px;
+  margin-left: 1183px;
   z-index: 0;
   transform: rotate(180deg);
 }
@@ -963,7 +963,7 @@ header {
   max-width: 753px;
   max-height: 502px;
   display: flex;
-  margin-top: 120px;
+  margin-top: 50px;
   right: 0;
 }
 
@@ -974,12 +974,11 @@ header {
 }
 
 .card-back3 {
-  position: absolute;
   max-width: 516.5px;
   max-height: 367.99px;
   display: flex;
-  margin: 105px;
-  right: 146px;
+  margin-right: 252px;
+  margin-top: 35px;
   z-index: 0;
 }
 
@@ -988,7 +987,7 @@ header {
   max-width: 516.5px;
   max-height: 367.99px;
   display: flex;
-  margin-top: 200px;
+  margin-top: 133px;
   margin-left: 1210px;
   z-index: 0;
 }
