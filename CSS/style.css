@@ -1089,7 +1089,7 @@ header {
   text-align: center;
   font-size: 60px;
   color: #000080;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 .banner{
@@ -1145,8 +1145,9 @@ header {
 
 /* SECTION 12 */
 #section12_sobrenos {
-  position: relative;
+  margin-top: 100px;
   z-index: 1;
+  position: relative;
   min-width: 100%;
   min-height: 1080px;
   padding: 100px 50px;
